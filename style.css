@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: white;
+  background: #0c1b3a;
+  padding-top: 80px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #0b1230;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4da3ff;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(270deg, #0c1b3a, #1e2a78, #0c1b3a);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero h2 {
+  color: #4da3ff;
+}
+
+/* Tag */
+.tag {
+  background: rgba(255,255,255,0.1);
+  padding: 6px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.primary {
+  background: #ff2e63;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+}
+
+.primary:hover {
+  transform: scale(1.1);
+  background: #ff4d7a;
+}
+
+.secondary:hover {
+  background: #4da3ff;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Skills */
+.skills-box span {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #1e2a78;
+  border-radius: 20px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.skills-box span:hover {
+  transform: scale(1.1);
+  background: #4da3ff;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+form textarea {
+  height: 120px;
+  resize: none;
+}
+
+#status {
+  margin-top: 10px;
+  color: #4da3ff;
+}
+
+body {
+  background: #0b1230;
+  color: #fff;
+  padding-top: 80px;
+}
+
