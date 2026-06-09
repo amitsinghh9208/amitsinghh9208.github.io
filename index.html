@@ -1,337 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YLC9XCD134"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-YLC9XCD134', {
-    page_path: window.location.pathname
-  });
-</script>
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amit Singh | Lead Quality Analyst </title>
-<!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <head>
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLC9XCD134"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-YLC9XCD134', {
+        page_path: window.location.pathname
+      });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Singh | Lead Quality Analyst </title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
 
-<style>
+      body {
+        background: #0b1230;
+        color: #fff;
+      }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+      /* Navbar */
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
 
-body {
-  background: #0b1230;
-  color: #fff;
-}
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 60px;
+        background: #0b1230;
+      }
 
-/* Navbar */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+      .logo {
+        font-weight: 700;
+        font-size: 20px;
+      }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #0b1230;
-}
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
 
-.logo {
-  font-weight: 700;
-  font-size: 20px;
-}
+      nav a {
+        color: #ccc;
+        text-decoration: none;
+        transition: 0.3s;
+      }
 
-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
+      nav a:hover {
+        color: #4da3ff;
+      }
 
-nav a {
-  color: #ccc;
-  text-decoration: none;
-  transition: 0.3s;
-}
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(270deg, #0b1230, #1e2a78, #0b1230);
+        background-size: 600% 600%;
+        animation: bgMove 10s ease infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
 
-nav a:hover {
-  color: #4da3ff;
-}
+      @keyframes bgMove {
+        0% {
+          background-position: 0%
+        }
 
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: linear-gradient(270deg, #0b1230, #1e2a78, #0b1230);
-  background-size: 600% 600%;
-  animation: bgMove 10s ease infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
+        50% {
+          background-position: 100%
+        }
 
-@keyframes bgMove {
-  0% {background-position: 0%}
-  50% {background-position: 100%}
-  100% {background-position: 0%}
-}
+        100% {
+          background-position: 0%
+        }
+      }
 
-.hero h1 {
-  font-size: 55px;
-  font-weight: 700;
-}
+      .hero h1 {
+        font-size: 55px;
+        font-weight: 700;
+      }
 
-.hero h2 {
-  color: #4da3ff;
-  margin: 10px 0;
-}
+      .hero h2 {
+        color: #4da3ff;
+        margin: 10px 0;
+      }
 
-.hero p {
-  color: #b0b0b0;
-}
+      .hero p {
+        color: #b0b0b0;
+      }
 
-/* Tag */
-.tag {
-  display: inline-block;
-  padding: 6px 16px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  margin-bottom: 15px;
-}
+      /* Tag */
+      .tag {
+        display: inline-block;
+        padding: 6px 16px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
 
-/* Buttons */
-.buttons {
-  margin-top: 20px;
-}
+      /* Buttons */
+      .buttons {
+        margin-top: 20px;
+      }
 
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 25px;
-  margin: 10px;
-  transition: 0.3s;
-  text-decoration: none;
-}
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        border-radius: 25px;
+        margin: 10px;
+        transition: 0.3s;
+        text-decoration: none;
+      }
 
-.primary {
-  background: #ff2e63;
-  color: #fff;
-}
+      .primary {
+        background: #ff2e63;
+        color: #fff;
+      }
 
-.secondary {
-  border: 1px solid #4da3ff;
-  color: #4da3ff;
-}
+      .secondary {
+        border: 1px solid #4da3ff;
+        color: #4da3ff;
+      }
 
-.btn:hover {
-  transform: scale(1.1);
-}
+      .btn:hover {
+        transform: scale(1.1);
+      }
 
-/* Sections */
-section {
-  padding: 100px 40px;
-  text-align: center;
-}
+      /* Sections */
+      section {
+        padding: 100px 40px;
+        text-align: center;
+      }
 
-.skills span {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background: #1e2a78;
-  border-radius: 25px;
-  transition: 0.3s;
-}
+      .skills span {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background: #1e2a78;
+        border-radius: 25px;
+        transition: 0.3s;
+      }
 
-.skills span:hover {
-  background: #4da3ff;
-}
+      .skills span:hover {
+        background: #4da3ff;
+      }
 
-.project {
-  background: #1e2a78;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  border-radius: 10px;
-}
+      .project {
+        background: #1e2a78;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+        border-radius: 10px;
+      }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-</style>
-<meta name="description" content="Amit Singh - Lead Quality Analyst specializing in fintech, cloud systems, ETL validation, AWS, automation, and data governance.">
-</head>
-
-<body>
-
-<!-- Navbar -->
-<header>
-<nav>
-  <div class="logo">|| Amit Singh ||</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-</header>
-
-<!-- Hero -->
-<section id="home" class="hero">
-  <div data-aos="fade-up">
-    <p class="tag">WELCOME TO MY SPACE!</p>
-    <h1>Hi, I'm Amit Singh</h1>
-    <h2><span id="typing"></span></h2>
-    <p>QA Lead | Fintech | Cloud & Data Governance Specialist</p>
-
-    <div class="buttons">
-      <a href="#contact" class="btn primary">Get In Touch</a>
-      <a href="#projects" class="btn secondary">My Work</a>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" data-aos="fade-right">
-  <h2>About Me</h2>
-  <p>
-    QA Lead & Technology Governance professional with 12+ years of experience in fintech, cloud, and enterprise systems. 
-    I specialize in ETL data validation, risk-based testing, AWS cloud systems, and regulatory compliance (GDPR). 
-    I have led cross-functional teams and delivered high-impact enterprise programs with strong focus on quality, automation, and governance.
-  </p>
-</section>
-
-<!-- Skills -->
-<section id="skills" data-aos="zoom-in">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>AWS (S3, EC2, IAM)</span>
-    <span>Python</span>
-    <span>JavaScript</span>
-    <span>SQL</span>
-    <span>Selenium</span>
-    <span>REST API Testing</span>
-    <span>CI/CD (Jenkins, Docker)</span>
-    <span>Data Validation (ETL)</span>
-    <span>GDPR Compliance</span>
-    <span>Agile & PMP</span>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" data-aos="fade-up">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Enterprise Payment Systems QA</h3>
-    <p>
-      Led QA strategy and automation for enterprise payment platforms including cross-border payment systems.
-      Ensured zero-defect delivery using CI/CD pipelines and stakeholder governance.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>AWS Cloud Migration (BACIS)</h3>
-    <p>
-      Led QA for large-scale AWS cloud migration, validating ETL pipelines and ensuring financial data integrity across systems.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>Loan Management System Automation</h3>
-    <p>
-      Designed Selenium-based automation framework for loan management systems, reducing testing overhead by 40%.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>Fintech Data Pipeline Validation</h3>
-    <p>
-      Conducted end-to-end testing of financial ETL pipelines using SQL and API testing across multiple vendor systems.
-    </p>
-  </div>
-
-</section>
-
-<section id="contact" data-aos="fade-left">
-  <h2>Contact Me</h2>
-
-  <form id="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit" class="btn primary">Send Message</button>
-  </form>
-
-  <p id="status"></p>
-</section>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-// Typing animation
-new Typed("#typing", {
-  strings: [
-    "Software Developer",
-    "Data Enthusiast",
-    "Problem Solver"
-  ],
-  typeSpeed: 60,
-  backSpeed: 30,
-  loop: true
-});
-
-// AOS animation
-AOS.init({
-  duration: 1000,
-  once: true
-});
-</script>
-  
-<!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-(function(){
-  emailjs.init("J2cBgjw4s8J3_DlZZ");
-})();
-</script>
-
-<script>
-// Contact form submit
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm("service_t92ua1s", "template_pbtfazg", this)
-    .then(function() {
-      document.getElementById("status").innerText = "Message sent successfully ✅";
-    }, function(error) {
-      document.getElementById("status").innerText = "Failed to send ❌";
-    });
-});
-</script>  
-</body>
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <meta name="description" content="Amit Singh - Lead Quality Analyst specializing in fintech, cloud systems, ETL validation, AWS, automation, and data governance.">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">|| Amit Singh ||</div>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div data-aos="fade-up">
+        <p class="tag">WELCOME TO MY SPACE!</p>
+        <h1>Hi, I'm Amit Singh</h1>
+        <h2>
+          <span id="typing"></span>
+        </h2>
+        <p>QA Lead | Fintech | Cloud & Data Governance Specialist</p>
+        <div class="buttons">
+          <a href="#contact" class="btn primary">Get In Touch</a>
+          <a href="#projects" class="btn secondary">My Work</a>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p> QA Lead & Technology Governance professional with 12+ years of experience in fintech, cloud, and enterprise systems. I specialize in ETL data validation, risk-based testing, AWS cloud systems, and regulatory compliance (GDPR). I have led cross-functional teams and delivered high-impact enterprise programs with strong focus on quality, automation, and governance. </p>
+    </section>
+    <!-- Skills -->
+    <section id="skills" data-aos="zoom-in">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>AWS (S3, EC2, IAM)</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>Selenium</span>
+        <span>REST API Testing</span>
+        <span>CI/CD (Jenkins, Docker)</span>
+        <span>Data Validation (ETL)</span>
+        <span>GDPR Compliance</span>
+        <span>Agile & PMP</span>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Enterprise Payment Systems QA</h3>
+        <p> Led QA strategy and automation for enterprise payment platforms including cross-border payment systems. Ensured zero-defect delivery using CI/CD pipelines and stakeholder governance. </p>
+      </div>
+      <div class="project">
+        <h3>AWS Cloud Migration (BACIS)</h3>
+        <p> Led QA for large-scale AWS cloud migration, validating ETL pipelines and ensuring financial data integrity across systems. </p>
+      </div>
+      <div class="project">
+        <h3>Loan Management System Automation</h3>
+        <p> Designed Selenium-based automation framework for loan management systems, reducing testing overhead by 40%. </p>
+      </div>
+      <div class="project">
+        <h3>Fintech Data Pipeline Validation</h3>
+        <p> Conducted end-to-end testing of financial ETL pipelines using SQL and API testing across multiple vendor systems. </p>
+      </div>
+    </section>
+    <section id="contact" data-aos="fade-left">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+      <p id="status"></p>
+    </section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Typing animation
+      new Typed("#typing", {
+        strings: ["Software Developer", "Data Enthusiast", "Problem Solver"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true
+      });
+      // AOS animation
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("J2cBgjw4s8J3_DlZZ");
+      })();
+    </script>
+    <script>
+      // Contact form submit
+      document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        emailjs.sendForm("service_t92ua1s", "template_pbtfazg", this).then(function() {
+          document.getElementById("status").innerText = "Message sent successfully ✅";
+        }, function(error) {
+          document.getElementById("status").innerText = "Failed to send ❌";
+        });
+      });
+    </script>
+  </body>
 </html>
